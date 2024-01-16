@@ -1,0 +1,643 @@
+version: 1.2
+file_type: technique-administration
+name: NetSupport Intrusion Results in Domain Compromise
+domain: enterprise-attack
+platform:
+  - Windows
+techniques:
+  - technique_id: T1566.001
+    technique_name: Spearphishing Attachment
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: null
+            score: -1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: null
+            score: 0
+            comment: ''
+            auto_generated: true
+  - technique_id: T1059.007
+    technique_name: JavaScript
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: null
+            score: -1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 1
+            comment: ''
+            auto_generated: false
+  - technique_id: T1059.001
+    technique_name: PowerShell
+    detection:
+      - applicable_to:
+          - Windows
+        location:
+          - Microsoft Defender for Endpoint - EDR
+          - Splunk -SIEM
+        comment: '"C:\Windows\System32\cmd.exe" /c PowersheLl -nop -w hidden -ep bypaSS -enC sajbfkslidgbsiadbfgslgnd'
+        score_logbook:
+          - date: 2023-12-08T00:00:00.000Z
+            score: 2
+            comment: Logged
+          - date: 2023-12-20T00:00:00.000Z
+            score: 4
+            comment: Alerted in real time
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: Alerted and Escalation in real time
+    visibility:
+      - applicable_to:
+          - Windows
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1059.003
+    technique_name: Windows Command Shell
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+            auto_generated: false
+  - technique_id: T1047
+    technique_name: Windows Management Instrumentation
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1204.002
+    technique_name: Malicious File
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 0
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1090
+    technique_name: Proxy
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: null
+            score: -1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: null
+            score: 0
+            comment: ''
+            auto_generated: true
+  - technique_id: T1571
+    technique_name: Non-Standard Port
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: null
+            score: -1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: null
+            score: 0
+            comment: ''
+            auto_generated: true
+  - technique_id: T1547.001
+    technique_name: Registry Run Keys / Startup Folder
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1053.005
+    technique_name: Scheduled Task
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+            auto_generated: false
+  - technique_id: T1136.001
+    technique_name: Local Account
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: null
+            score: -1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: null
+            score: 0
+            comment: ''
+            auto_generated: true
+  - technique_id: T1562.001
+    technique_name: Disable or Modify Tools
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1003.003
+    technique_name: NTDS
+    detection:
+      - applicable_to:
+          - Windows
+        location:
+          - EDR
+          - SIEM
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: ''
+    visibility:
+      - applicable_to:
+          - Windows
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+            auto_generated: false
+  - technique_id: T1003.001
+    technique_name: LSASS Memory
+    detection:
+      - applicable_to:
+          - Windows
+        location:
+          - 'Microsoft Depender for Endpoint - EDR '
+          - Splunk - SIEM
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: ''
+    visibility:
+      - applicable_to:
+          - Windows
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+            auto_generated: false
+  - technique_id: T1572
+    technique_name: Protocol Tunneling
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 0
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: null
+            score: 0
+            comment: ''
+            auto_generated: true
+  - technique_id: T1021.001
+    technique_name: Remote Desktop Protocol
+    detection:
+      - applicable_to:
+          - Windows
+        location:
+          - SIEM
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+    visibility:
+      - applicable_to:
+          - Windows
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1033
+    technique_name: System Owner/User Discovery
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1069.002
+    technique_name: Domain Groups
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1018
+    technique_name: Remote System Discovery
+    detection:
+      - applicable_to:
+          - Windows
+        location:
+          - EDR
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+    visibility:
+      - applicable_to:
+          - Windows
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1082
+    technique_name: System Information Discovery
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1057
+    technique_name: Process Discovery
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1087.002
+    technique_name: Domain Account
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1087.001
+    technique_name: Local Account
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 4
+            comment: ''
+            auto_generated: false
+  - technique_id: T1560.001
+    technique_name: Archive via Utility
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 0
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 1
+            comment: ''
+            auto_generated: false
+  - technique_id: T1027
+    technique_name: Obfuscated Files or Information
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1140
+    technique_name: Deobfuscate/Decode Files or Information
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 0
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1036.004
+    technique_name: Masquerade Task or Service
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: null
+            score: -1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1021.002
+    technique_name: SMB/Windows Admin Shares
+    detection:
+      - applicable_to:
+          - Windows
+        location:
+          - SIEM
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+    visibility:
+      - applicable_to:
+          - Windows
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+  - technique_id: T1570
+    technique_name: Lateral Tool Transfer
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 1
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: null
+            score: 0
+            comment: ''
+            auto_generated: true
+  - technique_id: T1482
+    technique_name: Domain Trust Discovery
+    detection:
+      - applicable_to:
+          - all
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 5
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+            auto_generated: false
+  - technique_id: T1615
+    technique_name: Group Policy Discovery
+    detection:
+      - applicable_to:
+          - Windows
+        location: []
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 3
+            comment: ''
+    visibility:
+      - applicable_to:
+          - all
+        comment: ''
+        score_logbook:
+          - date: 2023-12-21T00:00:00.000Z
+            score: 2
+            comment: ''
+            auto_generated: false
+notes: https://thedfirreport.com/2023/10/30/netsupport-intrusion-results-in-domain-compromise/
