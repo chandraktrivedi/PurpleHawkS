@@ -1,6 +1,6 @@
-## Mitre ATT&CK-D3FEND - Identify TTPs and Countermeasures
+# Mitre ATT&CK-D3FEND - Identify TTPs and Countermeasures
 
-# This lab will help to learn about:
+## This lab will help to learn about:
 * Mitre ATT&CK - Technical side
 * D3FEND - Countermeasures
 
