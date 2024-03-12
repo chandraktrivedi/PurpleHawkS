@@ -1,4 +1,4 @@
-# Purple Teaming Exercise 3 - Create your own
+# Purple Teaming Exercise 2 - Create your own
 ## This lab will help to learn about:
 * How to emulate adversary using ATTPwn tool
 * Conducting purple teaming in an organization
