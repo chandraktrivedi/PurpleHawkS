@@ -5,4 +5,4 @@
 * Purple teaming - Adversary Emulation
 * Windows Processes using Process Hacker
 * Windows Logs Analysis using Event Viewer
-* GUI Sysmon logs using Sysmon-view tool. 
+* GUI Sysmon logs using Sysmon-view tool 
