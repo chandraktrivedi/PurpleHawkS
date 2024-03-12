@@ -1,0 +1,27 @@
+title: Potential PsExec Remote Execution
+id: lab8
+status: test
+description: Detects potential psexec command that initiate execution on a remote systems via common commandline flags used by the utility
+references:
+    - https://docs.microsoft.com/en-us/sysinternals/downloads/psexec
+    - https://github.com/SigmaHQ/sigma
+author: PurpleHawkS
+date: 2024/03/12
+tags:
+    - attack.resource_development
+    - attack.t1587.001
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        # Accepting EULA in commandline - often used in automated attacks
+        CommandLine|contains|all:
+            - 'accepteula'
+            - ' -u '
+            - ' -p '
+            - ' \\'
+    condition: selection
+falsepositives:
+    - Unknown
+level: high
