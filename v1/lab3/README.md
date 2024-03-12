@@ -5,4 +5,5 @@
 * Comparsion with current detection/visibility using DeTT&CT
 * Gap analysis report writing
 
-To practice more: https://thedfirreport.com/
+To practice more: https://thedfirreport.com/  
+For guidance: https://medium.com/@chandrak.trivedi/purple-teaming-best-gap-analysis-open-source-tool-vectr-and-dettect-c969b19590c9
