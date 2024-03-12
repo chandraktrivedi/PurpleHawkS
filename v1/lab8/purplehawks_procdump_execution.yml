@@ -1,0 +1,24 @@
+title: Procdump Execution
+id: lab08
+status: test
+description: Detects usage of the SysInternals Procdump utility
+references:
+    - https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
+    - https://github.com/SigmaHQ/sigma 
+author: PurpleHawkS
+date: 2024/03/12
+tags:
+    - attack.defense_evasion
+    - attack.t1036
+    - attack.t1003.001
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith:
+            - '\procdump.exe'
+    condition: selection
+falsepositives:
+    - Legitimate use of procdump by a developer or administrator
+level: medium
