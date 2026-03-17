@@ -1,4 +1,4 @@
-# March 2026 | IoAs
+# IoAs Intelligence
 ## [ClickFix | Atos Blog](https://atos.net/en/lp/cybershield/investigating-a-new-click-fix-variant)
 
 **Stage 1:** Run application executes following command:
