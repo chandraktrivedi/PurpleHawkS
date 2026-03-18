@@ -2,7 +2,7 @@
 **Stage 1:** Clickfix Attack  
 **Stage 2:** msiexec.exe (.msi file) -> wscript.exe (.vbs file) -> powershell.exe (.ps1) -> curl.exe (download deno app) -> tar.exe (unzip)  
 **Stage 3:** Deno.exe (c2 connection) -> cmd.exe -> powershell.exe (c2 connection)  
-**Stage 4:** pythonw.exe 
+**Stage 4:** pythonw.exe  
 **Stage 5:** RAT palyoads 
 
 # IoA  
@@ -17,6 +17,6 @@ C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -N
 # References
 [1] https://www.threatdown.com/blog/castlerat-cyber-attack-is-the-first-to-abuse-deno-javascript-runtime-to-evade-enterprise-security/  
 [2] https://www.virustotal.com/gui/file/2a00705cfd3c15cf8913e9eb4e23968efd06f1feceaef9987d26c5518887d043/behavior  
-[3] https://app.any.run/tasks/2aea5a2b-8896-491e-aa0c-a0775838a3cc/ 
-[4] https://app.any.run/tasks/aa9f2f55-72f5-4a00-a2f7-234a36461b8a/
-[5] https://app.any.run/tasks/2f7b7468-ed4d-4075-9d75-4d512ccd4fed/
+[3] https://app.any.run/tasks/2aea5a2b-8896-491e-aa0c-a0775838a3cc/  
+[4] https://app.any.run/tasks/aa9f2f55-72f5-4a00-a2f7-234a36461b8a/   
+[5] https://app.any.run/tasks/2f7b7468-ed4d-4075-9d75-4d512ccd4fed/  
