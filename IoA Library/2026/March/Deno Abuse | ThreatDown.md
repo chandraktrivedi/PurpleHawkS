@@ -20,3 +20,4 @@ C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -N
 [3] https://app.any.run/tasks/2aea5a2b-8896-491e-aa0c-a0775838a3cc/  
 [4] https://app.any.run/tasks/aa9f2f55-72f5-4a00-a2f7-234a36461b8a/   
 [5] https://app.any.run/tasks/2f7b7468-ed4d-4075-9d75-4d512ccd4fed/  
+[6] https://www.virustotal.com/gui/file/1fd01d13d9ef5463bd7ca0e6f72df806fa684d0bf49ba927aa5432f7a7ad4f02/behavior  
