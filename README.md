@@ -6,3 +6,5 @@ PurpleHawkS aims to delivers high-fidelity Cyber Attack-Defense intelligence des
 - https://d3fend.mitre.org/
 - https://sigma.nasbench.dev/
 - https://detection.fyi/
+- https://www.virustotal.com/
+- https://intelligence.any.run/
