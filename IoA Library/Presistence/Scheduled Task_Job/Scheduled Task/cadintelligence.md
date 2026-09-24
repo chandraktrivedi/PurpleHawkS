@@ -11,8 +11,8 @@
 | TITLE| DETAILS |
 | :-----------: | :-----------: |
 | _PLATFORM(S)_ | Windows |
-| _ARTIFACT(S)_ | d3f:Process; d3f:ScheduledTask; d3f:CommandLine |
-| _COUNTERMEASURE(S)_ | d3f:ScheduledTaskAnalysis; d3f:ProcessLineageAnalysis |
+| _ARTIFACT(S)_ | d3f:Process; d3f:ScheduledJob |
+| _COUNTERMEASURE(S)_ | d3f:ScheduledJobAnalysis; d3f:ProcessLineageAnalysis; d3f:ProcessSpawnAnalysis |
 | _DETECTION_ | [Scheduled Task Creation Via Schtasks.EXE](https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_schtasks_creation/) |
 | _HUNT_ | ```(Image:"*\\schtasks.exe") AND (CommandLine:"*/create*") AND (CommandLine:"*/xml*")``` |
 | _ACTOR(S) SEEN_ | N/A |
