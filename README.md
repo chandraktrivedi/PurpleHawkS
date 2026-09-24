@@ -8,3 +8,6 @@ PurpleHawkS aims to delivers high-fidelity Cyber Attack-Defense intelligence des
 - https://detection.fyi/
 - https://www.virustotal.com/
 - https://intelligence.any.run/
+
+# Bookmarks
+- https://start.me/p/w9MpNL/purplehawk-security
