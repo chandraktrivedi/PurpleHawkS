@@ -1,0 +1,85 @@
+{
+  "name": "Custom Threat Actor / Coverage Layer",
+  "versions": {
+    "attack": "13",
+    "navigator": "4.8.1",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Custom technique mapping generated for ATT&CK Navigator",
+  "filters": {
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows",
+      "Office 365",
+      "SaaS",
+      "IaaS",
+      "Google Workspace",
+      "Containers"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side-by-side",
+    "aggregateFunction": "average",
+    "showID": true,
+    "showName": true,
+    "showTechniquesInTactic": true
+  },
+  "hideDisabled": false,
+  "gradient": {
+    "colors": [
+      "#ff6666",
+      "#ffe666",
+      "#85e085"
+    ],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [
+    {
+      "color": "#85e085",
+      "label": "High Coverage / Monitored"
+    },
+    {
+      "color": "#ffe666",
+      "label": "Partial Coverage"
+    },
+    {
+      "color": "#ff6666",
+      "label": "No Coverage / High Risk"
+    }
+  ],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "techniques": [
+    {
+      "techniqueID": "T1566.001",
+      "tactic": "initial-access",
+      "score": 85,
+      "color": "#85e085",
+      "comment": "Spearphishing Attachment: Covered via Email Gateway detection rule #1024",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "tactic": "execution",
+      "score": 40,
+      "color": "#ffe666",
+      "comment": "PowerShell Execution: Monitored via EDR, but script block logging is partially disabled",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1003",
+      "score": 0,
+      "color": "#ff6666",
+      "comment": "OS Credential Dumping: High risk - need memory detection rules",
+      "enabled": true
+    }
+  ]
+}
