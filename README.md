@@ -8,6 +8,8 @@ PurpleHawkS aims to delivers high-fidelity Cyber Attack-Defense intelligence des
 - https://detection.fyi/
 - https://www.virustotal.com/
 - https://intelligence.any.run/
+- https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+- https://www.ultimatewindowssecurity.com/
 
 # Bookmarks
 - https://start.me/p/w9MpNL/purplehawk-security
