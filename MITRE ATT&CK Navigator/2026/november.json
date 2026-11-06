@@ -43,8 +43,33 @@
 			"metadata": [],
 			"links": [
 				{
-					"label": "PurpleHawks CAD Intelligence",
+					"label": "PurpleHawkS CAD Intelligence",
 					"url": "https://github.com/chandraktrivedi/PurpleHawkS/blob/main/IoA%20Library/Discovery/Network%20Share%20Discovery/cadintelligence.md"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1059.006",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [
+				{
+					"label": "PurpleHawkS CAD Intelligence ",
+					"url": "https://github.com/chandraktrivedi/PurpleHawkS/blob/main/IoA%20Library/Execution/Command%20and%20Scripting%20Interpreter/Python/cadintelligence.md"
 				}
 			],
 			"showSubtechniques": false
