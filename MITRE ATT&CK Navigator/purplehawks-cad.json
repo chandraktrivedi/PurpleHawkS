@@ -449,10 +449,10 @@
 			"tactic": "credential-access",
 			"color": "",
 			"comment": "",
-			"enabled": false,
+			"enabled": true,
 			"metadata": [],
 			"links": [],
-			"showSubtechniques": false
+			"showSubtechniques": true
 		},
 		{
 			"techniqueID": "T1003.008",
@@ -507,11 +507,29 @@
 		{
 			"techniqueID": "T1003.003",
 			"tactic": "credential-access",
-			"color": "",
-			"comment": "",
-			"enabled": false,
-			"metadata": [],
-			"links": [],
+			"color": "#756bb1",
+			"comment": "Please visit Githib Page  IoA Library for more details",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Threat Groups",
+					"value": "Akira; Qilin; Anubis; +2"
+				},
+				{
+					"name": "Malwares",
+					"value": "N/A"
+				},
+				{
+					"name": "Tools",
+					"value": "wbadmin; ntdsutil"
+				}
+			],
+			"links": [
+				{
+					"label": "PurpleHawkS CAD",
+					"url": "https://github.com/chandraktrivedi/PurpleHawkS/blob/main/IoA%20Library/Credential%20Access/OS%20Credential%20Dumping/NTDS/cadintelligence.md"
+				}
+			],
 			"showSubtechniques": false
 		},
 		{
@@ -1638,7 +1656,7 @@
 			"techniqueID": "T1135",
 			"tactic": "discovery",
 			"color": "#756bb1",
-			"comment": "",
+			"comment": "Please visit Githib Page  IoA Library for more details",
 			"enabled": true,
 			"metadata": [
 				{
@@ -8888,7 +8906,7 @@
 	],
 	"showTacticRowBackground": false,
 	"tacticRowBackground": "#dddddd",
-	"selectTechniquesAcrossTactics": true,
+	"selectTechniquesAcrossTactics": false,
 	"selectSubtechniquesWithParent": false,
 	"selectVisibleTechniques": false
 }
