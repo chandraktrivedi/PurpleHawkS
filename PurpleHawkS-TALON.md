@@ -24,13 +24,13 @@ TALON is structured across five core phases centered around continuous learning 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                       [T] TARGET                            │
-│           Identify what matters most & set hypothesis        │
+│           Identify what matters most & set hypothesis       │
 └──────────────────────────────┬──────────────────────────────┘
                                │
                                ▼
             ┌────────────────────────────────────┐
-            │          [A] ANALYZE               │◄───────────┐
-            │    Search telemetry for evidence    │           │
+            │          [A] ANALYZE               │◄──────────┐
+            │    Search telemetry for evidence   │           │
             └─────────────────┬──────────────────┘           │
                               │                              │  Analyze-Learn
                               ▼                              │     Loop
